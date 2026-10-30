@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b1a">
+  <meta name="description" content="Create a beautiful personalized Diwali wish and spread the light with your friends and family.">
+  <meta property="og:title" content="Diwali Wishes 2026 – Spread the Light">
+  <meta property="og:description" content="Create your own personalized Diwali greeting in seconds.">
+  <title>Diwali Wishes 2026 – Spread the Light</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <main class="shell">
+    <header class="topline">
+      <div class="brand-mark">✦ <span>FESTIVE MOMENTS</span></div>
+      <div class="year-pill">DIWALI · 2026</div>
+    </header>
+
+    <section class="hero" id="welcome">
+      <div class="eyebrow"><span class="eyebrow-line"></span> A FESTIVAL OF LIGHT <span class="eyebrow-line"></span></div>
+      <div class="diya-stage" aria-label="Decorative glowing diya">
+        <div class="halo"></div>
+        <div class="flame"><i></i></div>
+        <div class="wick"></div>
+        <div class="diya"><div class="diya-glow"></div><div class="diya-rim"></div></div>
+        <div class="reflection"></div>
+      </div>
+      <h1>Let your light<br><em>shine brighter.</em></h1>
+      <p class="intro" id="introText">Someone has sent you a little happiness. Now make it yours and pass the light along.</p>
+      <div class="name-card">
+        <label for="nameInput">YOUR NAME</label>
+        <input id="nameInput" type="text" maxlength="32" autocomplete="name" placeholder="Enter your beautiful name">
+        <button id="createBtn" class="gold-button" type="button"><span>✧</span> CREATE MY DIWALI WISH <span>→</span></button>
+        <p class="microcopy">No sign-up. Just a little light and love.</p>
+        <p class="error" id="error" role="alert"></p>
+      </div>
+      <div class="scroll-note">A MOMENT OF LIGHT <span>✧</span></div>
+    </section>
+
+    <section class="greeting hidden" id="greeting" aria-live="polite">
+      <div class="greeting-card">
+        <div class="card-corner corner-tl"></div><div class="card-corner corner-tr"></div>
+        <div class="card-corner corner-bl"></div><div class="card-corner corner-br"></div>
+        <div class="mandala">✺</div>
+        <p class="card-kicker">WITH LIGHT, LOVE & GOOD WISHES</p>
+        <div class="tiny-diyas">🪔　✦　🪔</div>
+        <p class="happy">HAPPY DIWALI <span>2026</span></p>
+        <h2 id="receiverName">Your Name</h2>
+        <div class="gold-rule"><span>✧</span></div>
+        <p class="wish-copy">May your life shine brighter than a thousand diyas. May happiness fill your home, peace warm your heart, and every new beginning bring success and prosperity.</p>
+        <p class="blessing">Wishing you and your loved ones a beautiful, joyful and prosperous Diwali.</p>
+        <p class="signature">With love & light,<br><strong id="signatureName">Your Name</strong></p>
+        <div class="bottom-ornament">✧　❖　✧</div>
+      </div>
+      <div class="share-area">
+        <p class="share-title">DON'T KEEP THE LIGHT TO YOURSELF</p>
+        <p class="share-subtitle">Send your personalized wish to the people who make life brighter.</p>
+        <button id="shareBtn" class="whatsapp-button" type="button"><span class="wa-icon">◉</span> SHARE ON WHATSAPP <span>↗</span></button>
+        <div class="secondary-actions">
+          <button id="copyBtn" class="outline-button" type="button">▣ Copy greeting</button>
+          <button id="againBtn" class="outline-button" type="button">↻ Create another</button>
+        </div>
+        <p class="share-note" id="shareNote">WhatsApp will open with your message ready. Choose who to send it to.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-star">✧</div>
+      <p>MADE WITH <span>♥</span> TO SPREAD HAPPINESS</p>
+      <small>One light can brighten a thousand lives.</small>
+    </footer>
+  </main>
+  <canvas id="fireworks" aria-hidden="true"></canvas>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
