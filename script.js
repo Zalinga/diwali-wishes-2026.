@@ -340,3 +340,18 @@ function animate() {
     );
   }
 }
+
+// Guide user to the WhatsApp share button
+setTimeout(() => {
+    const shareGuide = document.getElementById("shareGuide");
+
+    if (shareGuide && shareBtn) {
+        shareGuide.classList.add("show");
+        shareBtn.classList.add("share-highlight");
+
+        shareGuide.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+    }
+}, 700);
