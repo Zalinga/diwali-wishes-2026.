@@ -28,3 +28,29 @@ footer{text-align:center;padding:22px 0 30px;border-top:1px solid #ffffff12;colo
 .preview-signature strong{color:#f0d38d;font-size:15px}
 .preview-cta{position:relative;z-index:1;margin-top:7px}
 .sender-preview + .name-card{margin-top:18px}
+
+
+/* Clear guidance to the WhatsApp share action after a wish is created */
+.share-guide{
+  display:none;
+  width:min(100%,390px);
+  margin:18px auto 12px;
+  padding:12px 14px;
+  border:1px solid #e8c87888;
+  border-radius:12px;
+  background:linear-gradient(110deg,#3a2a19aa,#5a421e66);
+  color:#ffe5a4;
+  font-size:10px;
+  line-height:1.6;
+  font-weight:800;
+  letter-spacing:1.1px;
+  text-align:center;
+  box-shadow:0 0 22px #e7b94a18;
+}
+.share-guide.show{display:flex;align-items:center;justify-content:center;gap:10px;animation:shareGuidePulse 1.5s ease-in-out infinite}
+.share-guide-arrow{font-size:23px;line-height:1;color:#ffe08a;animation:shareArrowBounce .8s ease-in-out infinite alternate}
+.whatsapp-button.share-highlight{outline:2px solid #55e69a;outline-offset:4px;box-shadow:0 0 0 6px #25d36620,0 0 28px #25d36688;animation:shareButtonPulse 1.25s ease-in-out infinite}
+@keyframes shareGuidePulse{50%{border-color:#ffe08a;box-shadow:0 0 25px #e7b94a35}}
+@keyframes shareArrowBounce{to{transform:translateY(5px)}}
+@keyframes shareButtonPulse{50%{filter:brightness(1.16);box-shadow:0 0 0 7px #25d3662b,0 0 34px #25d366aa}}
+@media(prefers-reduced-motion:reduce){.share-guide.show,.share-guide-arrow,.whatsapp-button.share-highlight{animation:none}}
