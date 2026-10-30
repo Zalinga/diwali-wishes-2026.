@@ -34,7 +34,18 @@
       </div>
       <h1>Let your light<br><em>shine brighter.</em></h1>
       <p class="intro" id="introText">Someone has sent you a little happiness. Now make it yours and pass the light along.</p>
-      <div class="name-card">
+
+      <section class="sender-preview hidden" id="senderPreview" aria-live="polite">
+        <div class="preview-label">A DIWALI WISH FROM SOMEONE SPECIAL</div>
+        <div class="preview-diya">🪔 ✨ 🪔</div>
+        <p class="preview-happy">HAPPY DIWALI 2026</p>
+        <h2 id="senderName">A Friend</h2>
+        <p class="preview-message">May your home shine with happiness, your heart glow with peace, and your life sparkle with success. Wishing you and your family a joyful and prosperous Diwali!</p>
+        <p class="preview-signature">With love & light,<br><strong id="senderSignature">A Friend</strong></p>
+        <button id="makeOwnBtn" class="gold-button preview-cta" type="button">NOW CREATE YOUR OWN WISH <span>→</span></button>
+      </section>
+
+      <div class="name-card" id="nameCard">
         <label for="nameInput">YOUR NAME</label>
         <input id="nameInput" type="text" maxlength="32" autocomplete="name" placeholder="Enter your beautiful name">
         <button id="createBtn" class="gold-button" type="button"><span>✧</span> CREATE MY DIWALI WISH <span>→</span></button>
