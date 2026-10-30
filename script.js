@@ -9,14 +9,21 @@ const sender = (params.get("from") || "").trim().slice(0, 32);
 let currentName = "";
 
 if (sender) {
-  $("introText").textContent = `A little Diwali light comes to you from ${sender}. Add your name and pass the happiness along.`;
+  $("introText").textContent = `A little Diwali light comes to you from ${sender}. Enjoy their wish, then create one of your own to share.`;
+  $("senderPreview").classList.remove("hidden");
+  $("senderName").textContent = sender;
+  $("senderSignature").textContent = sender;
+  $("makeOwnBtn").addEventListener("click", () => {
+    $("nameCard").scrollIntoView({ behavior: "smooth", block: "center" });
+    nameInput.focus({ preventScroll: true });
+  });
 }
 
 function cleanName(value) {
   return value.replace(/[<>]/g, "").replace(/\s+/g, " ").trim().slice(0, 32);
 }
 function greetingText(name) {
-  return `🪔✨ HAPPY DIWALI 2026! ✨🪔\n\nDear ${name},\n\nMay your life shine brighter than a thousand diyas. May happiness fill your home, peace warm your heart, and every new beginning bring success and prosperity.\n\nWishing you and your loved ones a beautiful, joyful and prosperous Diwali.\n\nWith love & light,\n${name}\n\nCreate your own personalized Diwali wish and spread the light:\n${makeShareUrl(name)}`;
+  return `🪔✨ HAPPY DIWALI 2026! ✨🪔\n\nDear ${name},\n\nMay your life shine brighter than a thousand diyas. May happiness fill your home, peace warm your heart, and every new beginning bring success and prosperity.\n\nWishing you and your loved ones a beautiful, joyful and prosperous Diwali.\n\nWith love & light,\n${name}\n\nNow it's your turn! Enter your name and send your own Diwali greeting to your friends:\n${makeShareUrl(name)}`;
 }
 function makeShareUrl(name) {
   const url = new URL(window.location.href);
