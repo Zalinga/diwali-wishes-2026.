@@ -14,3 +14,17 @@ h1{font-family:Cinzel,serif;font-weight:600;font-size:clamp(39px,7vw,66px);line-
 footer{text-align:center;padding:22px 0 30px;border-top:1px solid #ffffff12;color:#777b8d}footer .footer-star{color:#d9b66b;font-size:20px}footer p{font-size:9px;letter-spacing:2px;margin:7px 0}footer p span{color:#e7bd6c}footer small{font-size:10px}
 #fireworks{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:5}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);background:#f3d58e;color:#17111c;padding:11px 18px;border-radius:30px;font-size:12px;font-weight:700;opacity:0;transition:.25s;z-index:10;pointer-events:none;white-space:nowrap}.toast.show{opacity:1;transform:translate(-50%,0)}
 @media(max-width:520px){.shell{width:min(100% - 26px,900px)}.topline{height:62px}.hero{padding-top:42px}.diya-stage{transform:scale(.9);margin-top:8px;margin-bottom:0}.name-card{padding:18px}.greeting-card{padding:35px 21px 27px}.wish-copy,.blessing{font-size:13px}.card-kicker{letter-spacing:2px}.secondary-actions{gap:7px}.outline-button{flex:1}.greeting{padding-bottom:40px}}
+
+
+/* Shared sender greeting preview */
+.sender-preview{width:min(100%,500px);margin:25px auto 0;padding:24px 22px 20px;position:relative;text-align:center;border:1px solid #d9b96b88;border-radius:13px;background:radial-gradient(ellipse at 50% 0%,#75502c55,transparent 58%),linear-gradient(145deg,#191326,#0a1020 70%,#211727);box-shadow:0 20px 60px #0006,inset 0 0 35px #d6a54a0c}
+.sender-preview:before{content:"";position:absolute;inset:7px;border:1px solid #d5b66c30;border-radius:8px;pointer-events:none}
+.preview-label{font-size:9px;letter-spacing:2px;color:#c8aa6b;font-weight:700}
+.preview-diya{font-size:23px;margin:14px 0 7px}
+.preview-happy{font-family:Cinzel,serif;color:#f4d58b;font-size:23px;letter-spacing:1.5px;margin:8px 0}
+.sender-preview h2{font-family:Cinzel,serif;color:#fff1cf;font-size:clamp(27px,6vw,37px);margin:10px 0;overflow-wrap:anywhere}
+.preview-message{max-width:390px;margin:10px auto;color:#ded8c9;font-size:13px;line-height:1.8}
+.preview-signature{color:#aaa3a0;font-family:Cinzel,serif;font-size:12px;line-height:1.8;margin:16px 0}
+.preview-signature strong{color:#f0d38d;font-size:15px}
+.preview-cta{position:relative;z-index:1;margin-top:7px}
+.sender-preview + .name-card{margin-top:18px}
